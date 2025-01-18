@@ -30,7 +30,7 @@ class SizeConfig {
     pixelRatio = _mediaQueryData.devicePixelRatio;
     isDarkMode = _mediaQueryData.platformBrightness == Brightness.dark;
     isTablet = await Utils.isTablet(context);
-    print(isTablet);
+
   }
 
   static double getProportionateScreenHeigth(double inputHeigth) {
