@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction/common/size_config.dart';
 import 'package:introduction/routes/routes.dart';
-import 'package:introduction/views/home.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -76,9 +75,5 @@ class _SplashScreenState extends State<SplashScreen>
     );
   }
 
-  nav() async {
-    await Future.delayed(const Duration(seconds: 3)).then((onValue) {
-      Navigator.pop(context);
-    });
-  }
+  
 }

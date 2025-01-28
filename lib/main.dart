@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:introduction/common/theme.dart';
 import 'package:introduction/routes/routes.dart';
 import 'package:introduction/views/home.dart';
+import 'package:introduction/views/infos_view.dart';
 import 'package:introduction/views/splash_screen.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  double opacity = 1;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,7 +28,8 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: const SplashScreen(),
       routes: {
-        NavigationRoutes.home : (BuildContext context) => const Home()
+        NavigationRoutes.home : (BuildContext context) => const Home(),
+        NavigationRoutes.infosView: (BuildContext context) => const InfosView()
       },
     );
   }
